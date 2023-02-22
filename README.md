@@ -1,7 +1,7 @@
 <div align="center">
    <img src="https://www.rocketseat.com.br/assets/logos/explorer.svg" />
 </div>
-<h3 align="center">🚀 Project 20 | Stage 08 - Explorer</h3>
+<h3 align="center">🚀 Project 19 | Stage 08 - Explorer</h3>
 
 <div align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/jeadamek/rocketMovies_backend">
