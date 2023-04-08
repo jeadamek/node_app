@@ -15,19 +15,19 @@
 
 ## ✏️ About
 
-This is a project developed on Stage 8 in the Explorer course at the [Rocketseat School](https://www.rocketseat.com.br/). To access the entire course's projects [click on this link](https://github.com/jeadamek/explorer-rocketseat). 
+This project was developed on Stage 8 in the Explorer course at the [Rocketseat School](https://www.rocketseat.com.br/). To access the entire course assignments click [this link](https://github.com/jeadamek/explorer-rocketseat). 
 
 
 In this project, the challenge was to build an API using Node.js, this is part of a larger project that will be developed in the next two stages of the course.
-In the API, a database for movie ratings was developed. For this, tools such as SQlite, Beekeeper Studio and Query Builder Knex.js were used.
+In this API, a database for movie ratings was developed. Tools such as SQLite, Beekeeper Studio, and Query Builder Knex.js were used for this.
 
 I could practice and study:
 
 - API REST built in NodeJS e ExpressJS;
 - SQLite database to save the data;
-- Tool Beekeper Studio;
+- Tool Beekeeper Studio;
 - Query Builder with Knex.js;
-- Node.js middleware for handling multipart/form-data;
+- Node.js middleware for handling multipart/form data;
 - Promises with Async Await;
 - Classes and events;
 - Inheritance and Polymorphism;
@@ -62,7 +62,7 @@ The database diagram can be seen in the image below:<br/>
 
 ---
 
-## 💻 How to use
+## 🚀 Getting started
 
 ### Programs needed to Getting started:
 - [NodeJS](https://nodejs.org/en/)

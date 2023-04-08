@@ -5,7 +5,7 @@ const AppError = require("../utils/AppError")
 class MovieNotesController {
   async create(request, response) {
     const { title, description, rating, tags } = request.body;
-    const { user_id } = request.params; 
+    const user_id = request.user.id; 
 
     const validRating = await rating <= 5 && rating >= 1
 
@@ -54,7 +54,8 @@ class MovieNotesController {
   }
 
   async index(request, response){
-    const { title, user_id, tags } = request.query;
+    const { title, tags } = request.query;
+    const user_id = request.user.id;
 
     let notes;
 
@@ -71,6 +72,7 @@ class MovieNotesController {
         .whereLike("movie_notes.title", `%${title}%`)
         .whereIn("name", filterTags)
         .innerJoin("movie_notes", "movie_notes.id", "movie_tags.note_id")
+        .groupBy("notes.id")
         .orderBy("title");
     } else {
       notes = await knex("movie_notes")
