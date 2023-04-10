@@ -3,16 +3,18 @@ const sqliteConnection = require('./database/sqlite')
 const AppError = require('./utils/AppError')
 const uploadConfig = require('./configs/upload')
 
-const express = require('express')
-const routes = require('./routes')
+const express = require('express');
+const cors = require('cors');
+const routes = require('./routes');
 
-sqliteConnection()
+sqliteConnection();
 
-const app = express()
-app.use(express.json())
+const app = express();
+app.use(cors());
+app.use(express.json());
 
-app.use('/files', express.static(uploadConfig.UPLOADS_FOLDER))
-app.use(routes)
+app.use('/files', express.static(uploadConfig.UPLOADS_FOLDER));
+app.use(routes);
 
 app.use((error, request, response, next) => {
   if (error instanceof AppError) {
@@ -22,7 +24,7 @@ app.use((error, request, response, next) => {
     })
   }
 
-  console.error(error)
+  console.error(error);
 
   return response.status(500).json({
     status: 'error',
@@ -31,4 +33,4 @@ app.use((error, request, response, next) => {
 })
 
 const PORT = 3333
-app.listen(PORT, () => console.log(`Sever is running in port ${PORT}`))
+app.listen(PORT, () => console.log(`Sever is running in port ${PORT}`));
