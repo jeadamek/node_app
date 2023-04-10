@@ -19,6 +19,7 @@ This project was developed on Stage 8 in the Explorer course at the [Rocketseat 
 
 
 In this project, the challenge was to build an API using Node.js, this is part of a larger application that will be developed in the next two stages of the course.
+
 A database for movie ratings was developed. Tools such as SQLite, Beekeeper Studio, and Query Builder Knex.js were used for this.
 
 I could practice and study:
@@ -90,7 +91,7 @@ PORT Server localhost:3333
 <br />
 
 
-## 📝 Usage
+## 💻 Usage
 Once the API is running, users can interact with the movie ratings database by making requests to the following endpoints:
 
 `GET /ratings:` Retrieve a list of all movie ratings
