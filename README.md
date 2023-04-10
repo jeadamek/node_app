@@ -18,8 +18,8 @@
 This project was developed on Stage 8 in the Explorer course at the [Rocketseat School](https://www.rocketseat.com.br/). To access the entire course assignments click [this link](https://github.com/jeadamek/explorer-rocketseat). 
 
 
-In this project, the challenge was to build an API using Node.js, this is part of a larger project that will be developed in the next two stages of the course.
-In this API, a database for movie ratings was developed. Tools such as SQLite, Beekeeper Studio, and Query Builder Knex.js were used for this.
+In this project, the challenge was to build an API using Node.js, this is part of a larger application that will be developed in the next two stages of the course.
+A database for movie ratings was developed. Tools such as SQLite, Beekeeper Studio, and Query Builder Knex.js were used for this.
 
 I could practice and study:
 
@@ -61,10 +61,11 @@ The database diagram can be seen in the image below:<br/>
 </br>
 
 ---
-
+## ✨ Features
+This API allows for CRUD (Create, Read, Update, Delete) operations on movie ratings data. Users can add new ratings, retrieve existing ratings, update ratings, and delete ratings. 
 ## 🚀 Getting started
 
-### Programs needed to Getting started:
+### Programs to be installed on your system:
 - [NodeJS](https://nodejs.org/en/)
 - [Insomnia](https://insomnia.rest/download)
 - [Beekeeper Studio](https://www.beekeeperstudio.io/)
@@ -87,6 +88,30 @@ $ npm run dev
 PORT Server localhost:3333
 
 <br />
+
+
+## 📝 Usage
+Once the API is running, users can interact with the movie ratings database by making requests to the following endpoints:
+
+`GET /ratings:` Retrieve a list of all movie ratings
+
+`POST /ratings:` Add a new movie rating
+
+`GET /ratings/:id:` Retrieve a single movie rating by ID
+
+`DELETE /ratings/:id:` Delete a movie rating by ID
+
+
+
+`POST /users:` Create a new user
+
+`PUT /users/:id:` Update user's information
+
+`PATCH /users/avatar` Upload user's avatar image
+
+
+
+`GET /tags:` Retrieve a list of all movie tags
 
 ## 📝 License
 
