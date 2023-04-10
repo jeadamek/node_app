@@ -1,8 +1,7 @@
-const { response } = require("express");
 const knex = require("../database/knex");
 const AppError = require("../utils/AppError")
 
-class MovieNotesController {
+class MovieRatingsController {
   async create(request, response) {
     const { title, description, rating, tags } = request.body;
     const user_id = request.user.id; 
@@ -95,4 +94,4 @@ class MovieNotesController {
   }
 }
 
-module.exports = MovieNotesController;
+module.exports = MovieRatingsController;
