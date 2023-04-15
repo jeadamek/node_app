@@ -10,7 +10,7 @@ class SessionsController {
     const { email, password } = request.body
 
     // authenticate user's register
-    const user = await knex('users').where({ email }).first()
+    const user = await knex("users").where({ email }).first();
 
     if (!user) {
       throw new AppError('E-mail ou senha incorreta', 401)
