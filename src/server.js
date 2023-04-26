@@ -1,8 +1,10 @@
 require('express-async-errors');
 require("dotenv/config");
+
+const uploadConfig = require('./configs/upload');
+
 const sqliteConnection = require('./database/sqlite');
 const AppError = require('./utils/AppError');
-const uploadConfig = require('./configs/upload');
 
 const express = require('express');
 const cors = require('cors');
@@ -33,5 +35,5 @@ app.use((error, request, response, next) => {
   })
 })
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3333;
 app.listen(PORT, () => console.log(`Sever is running in port ${PORT}`));
