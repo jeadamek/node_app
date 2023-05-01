@@ -10,7 +10,7 @@
   
   <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/jeadamek/rocketMovies_backend?color=%231280BF">
 
- <!-- <a href="https://jeadamek.github.io/rocketMovies_backend/"> ▶️ Access Project </a> -->
+ <a href="https://rocket-movies-deploy.netlify.app/"> ▶️ Access Deploy </a>
 </div>  
 
 ## ✏️ About
@@ -28,8 +28,11 @@ I could practice and study:
 - SQLite database to save the data;
 - Tool Beekeeper Studio;
 - Query Builder with Knex.js;
+- PM2 Advanced process manager for production Node.js applications;
+- JWT with jsonwebtoken;
 - Node.js middleware for handling multipart/form data;
 - Promises with Async Await;
+- Protect sensitive data;
 - Classes and events;
 - Inheritance and Polymorphism;
 - Route mapping;
